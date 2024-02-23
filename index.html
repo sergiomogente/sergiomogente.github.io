@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <video autoplay loop muted id="video_background" preload="auto" volume="50">
+        <source src="fondo.mp4" type="video/mp4" />
+    </video>
+
+    <!-- SECCION INICIO  -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <img src="logo.png" class="w100">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li class="izquierda"><a href="#sobremi" class="seleccionado">SOBRE MI</a></li>
+                            <li class="izquierda"><a href="#habilidades">HABILIDADES</a></li>
+                            <li class="derecha"><a href="#proyectos">PROYECTOS</a></li>
+                            <li class="derecha"><a href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI  -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="foto.jpg" class="w200">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2 class="lead">
+                <span class="t1">Hola</span>
+                <span class="t2">soy, </span>
+                <span class="t3">Sergio Mogente</span>
+            </h2>
+            <h3>Diseñador de Aplicaciones Web</h3>
+            <p>Soy estudiante de un Grado Superior de Aplicaciones Web. Me apasiona el desarrollo web y
+                siempre estoy al tanto de las últimas tendencias en tecnología. Además, disfruto del fútbol, pasar
+                tiempo con amigos y
+                mantenerme en forma en el gimnasio. Emocionado por lo que el futuro me depara y comprometido con mi
+                crecimiento personal y profesional.</p>
+            <a href="CVSergioMogente.pdf" download="CVSergioMogente.pdf">Descargar CV</a>
+        </div>
+    </section>
+    <!-- SECCION HABILIDADES -->
+    <section id="habilidades">
+        <div class="contenedor-skills" id="skills">
+            <div class="habilidades">
+
+
+                <p class="titulo-seccion">HABILIDADES</p>
+                <div class="skill">
+                    <div class="info">
+                        <p><span class="lista"></span>C & C++</p>
+                        <span class="porcentaje">70%</span>
+                    </div>
+                    <div class="skills_bar skills_bar--70">
+                        <div class="skills_fill"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="info">
+                        <p><span class="lista"></span>HTML & CSS</p>
+                        <span class="porcentaje">70%</span>
+                    </div>
+                    <div class="skills_bar skills_bar--70">
+                        <div class="skills_fill"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="info">
+                        <p><span class="lista"></span>Java & JS</p>
+                        <span class="porcentaje">65%</span>
+                    </div>
+                    <div class="skills_bar skills_bar--65">
+                        <div class="skills_fill"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="info">
+                        <p><span class="lista"></span>PHP</p>
+                        <span class="porcentaje">50%</span>
+                    </div>
+                    <div class="skills_bar skills_bar--50">
+                        <div class="skills_fill"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- SECCION PROYECTOS  -->
+    <section id="proyectos">
+        <p class="titulo-seccion">PROYECTOS</p>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="foto2.png" alt="" class="w300">
+                <div class="info">
+                    <h4>Página SEO DREAM</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="foto3.png" alt="" class="w300">
+                <div class="info">
+                    <h4>Página SEO DREAM</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="foto4.png" alt="" class="w300">
+                <div class="info">
+                    <h4>Página Carnaval</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="foto5.png" alt="" class="w300">
+                <div class="info">
+                    <h4>Página Carnaval</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CONTACTO  -->
+    <section id="contacto">
+        <div class="contenido">
+            <p class="titulo-seccion">CONTACTO</p>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <form action="">
+                        <p>
+                            <label>Nombre*</label>
+                            <input type="text" name="nombre" required>
+                        </p>
+                        <p>
+                            <label>Apellidos*</label>
+                            <input type="text" name="apellidos" required>
+                        </p>
+                        <p>
+                            <label>Email*</label>
+                            <input type="email" name="email" required>
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="asunto" required>
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="messsage" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">
+                                Enviar
+                            </button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <div class="container">
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/sergio.mogente" class="social-icon"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/sergiomogente" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sergio.mogente/" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 - Sergio Mogente</p>
+        </div>
+    </footer>
+</body>
+
+</html>
