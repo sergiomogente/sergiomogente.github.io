@@ -587,7 +587,13 @@ footer p {
 
 /*Estilo movil*/
 @media screen and (min-width: 390px) and (max-width: 767px) {
-
+   /* FONDO */
+   #video_background {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
     /*MENU DESPLEGABLE*/
     nav {
         display: none;
